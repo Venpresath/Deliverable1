@@ -65,8 +65,13 @@ input, textarea{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-
+	clear: left;
 }
+
+.contentcontainer{
+		width: 75%;
+		margin: auto;
+	}
 
 
 img{
@@ -75,8 +80,10 @@ img{
 	align-self: center;
 	flex-wrap: wrap;
 }
-
-//media queries
+ul, ol{
+	display: inline-block;
+	margin: auto;
+}
 
 @media(max-width: 768px){
 	h1{
@@ -107,7 +114,8 @@ img{
 		clear: right;
 		position: relative;
 		top: 45px;
-		width: 100%;
+		width: 100;
+		font-size: 3vw;
 	}
 	.contentcontainer{
 		width: 75%;
