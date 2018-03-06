@@ -57,6 +57,11 @@ input, textarea{
 	width: 100%;
 	margin-bottom: 5px;
 	border: 0;
+	clear: both;
+}
+
+textarea{
+	width: 99%	;
 }
 
 .imgcontainer{
@@ -68,9 +73,12 @@ input, textarea{
 }
 
 .contentcontainer{
-		width: 75%;
-		margin: auto;
-	}
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    clear: left;
+}
 
 
 img{
@@ -81,7 +89,7 @@ img{
 }
 ul, ol{
 	display: inline-block;
-	margin: auto;
+	
 }
 
 @media(max-width: 768px){
