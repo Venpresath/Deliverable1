@@ -1,6 +1,5 @@
 html{
 	height: 100%;
-    background-repeat:no-repeat;
 }
 
 body{
@@ -8,8 +7,7 @@ body{
 	font-family: 'Merriweather', serif;
 	margin: 20px;
 	border: 0;
-	color: #101121;
-	
+	color: #101121;	
 }
 
 .navcontainer{
@@ -29,14 +27,14 @@ a:hover{
 	font-style: italic;
 }
 
-h1{
+h1, h2{
 	font-family: 'Berkshire Swash', cursive;
 	text-align:center;
+	text-shadow: 2px 5px 20px black;
 }
 
-p{
+.greeting{
 	text-align: center;
-	clear: both;
 }
 
 img{ 
@@ -46,30 +44,32 @@ img{
 
 form{
 	border: 5px solid #402e6e;
+	border-radius: 10px;
 	padding: 10px;
 	text-align: center;
 	width: 30%;
 	margin: auto;
-
+	clear: both;
 }
 
 input, textarea{
 	width: 100%;
 	margin-bottom: 5px;
 	border: 0;
-	clear: both;
+	border-radius: 10px;
+	margin: 10px 0px;
 }
+
+
+
+.button{
+	padding: 4px;
+    color: #10286d;
+}
+
 
 textarea{
-	width: 99%	;
-}
-
-.imgcontainer{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-	clear: left;
+	width: 99%;
 }
 
 .contentcontainer{
@@ -79,24 +79,55 @@ textarea{
     justify-content: space-around;
     clear: left;
 }
-
+.imgcontainer{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	clear: both;
+}
 
 img{
 	display: inline-flex;
-	width: 32%;
+	width: 31%;
 	align-self: center;
 	flex-wrap: wrap;
 }
-ul, ol{
+
+.lists{
+	text-align: left;
 	display: inline-block;
-	
+	margin: auto;
 }
+
+hr {
+    overflow: visible;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+.footer {
+   position: fixed;
+   display: inline;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   margin: auto;
+   background-color: #101121;
+   color: #d3d6f9;
+   text-align: center;
+}
+
 
 @media(max-width: 768px){
 	.header{
 		display:flex;
 		flex-direction: column-reverse;
 	}
+
 	nav{
 		display:flex;
 		flex:1;
@@ -106,13 +137,24 @@ ul, ol{
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
+		padding-bottom: 10px;
 	}
 	img{
-		margin-top: 10px;
+		margin: 10px 0px;
 		width: 75%;
 	}
 	.contentcontainer{
 		width: 75%;
 		margin: auto;
+	}
+	form{
+		width: 90%;
+		margin-bottom: 10px;
+	}
+	textarea{
+		width: 97%;
+	}
+	hr{
+		display:none;
 	}
 }
