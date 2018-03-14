@@ -40,6 +40,10 @@ h1, h2{
 img{ 
 	border-radius: 10px;
 	box-shadow: 4px 3px 2px 0px rgba(0,0,0,0.31);
+	display: inline-flex;
+	width: 31%;
+	align-self: center;
+	flex-wrap: wrap;
 }
 
 form{
@@ -52,7 +56,7 @@ form{
 	clear: both;
 }
 
-input, textarea{
+input{
 	width: 100%;
 	margin-bottom: 5px;
 	border: 0;
@@ -60,16 +64,18 @@ input, textarea{
 	margin: 10px 0px;
 }
 
-
-
 .button{
 	padding: 4px;
     color: #10286d;
 }
 
-
 textarea{
 	width: 99%;
+	width: 100%;
+	margin-bottom: 5px;
+	border: 0;
+	border-radius: 10px;
+	margin: 10px 0px;
 }
 
 .contentcontainer{
@@ -85,13 +91,6 @@ textarea{
 	align-items: center;
 	justify-content: space-around;
 	clear: both;
-}
-
-img{
-	display: inline-flex;
-	width: 31%;
-	align-self: center;
-	flex-wrap: wrap;
 }
 
 .lists{
